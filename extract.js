@@ -76,8 +76,8 @@ function extractFeatures(urlIn) {
         'number_count': numberCount,
         'number_to_letter_ratio': (numberCount / letterCount),
         'hyphen_count': hyphenCount,
-        'contains_top_20_domain_in_path': containsTop20Domain(pathname),
-        'contains_top_10_tld_in_host': containsTop10tld(hostname),
+        'top_20_domain_in_path': containsTop20Domain(pathname),
+        'top_10_tld_in_host': containsTop10tld(hostname),
         'shortening_service_used': shorteningServiceUsed(hostname)
     };
 
@@ -143,8 +143,8 @@ function outputResultCSV() {
         'number_count',
         'number_to_letter_ratio',
         'hyphen_count',
-        'contains_top_20_domain_in_path',
-        'contains_top_10_tld_in_host',
+        'top_20_domain_in_path',
+        'top_10_tld_in_host',
         'shortening_service_used',
         'label'
     ];
